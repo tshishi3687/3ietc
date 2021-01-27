@@ -1,30 +1,33 @@
 <?php
-require_once 'crudCours.php';
+require_once 'crudSection.php';
 
-$CoursAction = isset($_POST['CoursAction']) ? $_POST['CoursAction'] : '';
+
+$SectionAction = isset($_POST['SectionAction']) ? $_POST['SectionAction'] : '';
 
 $role = (object)['id'=> -1, 'role_name' => ''];
 
-switch ($CoursAction){
+switch ($SectionAction){
+
+
     case 'edit':
         $id = $_POST['id'];
-        $role = getCours($id);
+        $role = getSection($id);
 
         break;
 
     case 'creat':
         $nom = $_POST['nom'];
-        if (is_string($nom)) creatCours($nom);
+        if (is_string($nom)) creatSection($nom);
         else echo "L'ajoue nouveau role a échoué.";
         break;
     case 'update':
         $id = $_POST['id'];
         $nom = $_POST['nom'];
-        updateCours($id,$nom);
+        updateSection($id,$nom);
         break;
     case 'delete':
         $id = $_POST['id'];
-        deleteCours($id);
+        deleteSection($id);
         break;
     default: echo "";
 

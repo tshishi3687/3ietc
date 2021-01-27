@@ -1,43 +1,36 @@
 <?php
 
-
 // La connexion à la Datat Base
 require_once('../../model/data.php');
 
 
 $pdo = (new DataAccess)->access();
 
-// création cours
-function creatCours($name)
-{
+
+// créer un role
+function creatSection($name){
     global $pdo;
-    $sql = "INSERT INTO cours VALUE(NULL, ?)";
+    $sql = "INSERT INTO section VALUE(NULL, ?)";
     $stmt = $pdo->prepare($sql);
     $stmt->bindValue(1, $name, PDO::PARAM_STR);
-   try{
-       return $stmt->execute();
-   }catch(PDOException $e){
-       $e = "probleme de connexion";
-       return $e;
-   }
+    return $stmt->execute();
     $pdo = null;
 }
 
-// supprimer cours
-function deleteCous($id)
-{
+// effacer
+function deleteSection($id){
     global $pdo;
-    $sql = "DELETE FROM rours WHERE id=?";
+    $sql = "DELETE FROM section WHERE id=?";
     $stmt = $pdo->prepare($sql);
     $stmt->bindValue(1, $id, PDO::PARAM_INT);
     return $stmt->execute();
     $pdo = null;
 }
 
-function updateCous($id, $name)
-{
+// modifier
+function updateSection($id, $name){
     global $pdo;
-    $sql = "UPDATE cours SET cours_name=? WHERE id=?";
+    $sql = "UPDATE section SET section_name=? WHERE id=?";
     $stmt = $pdo->prepare($sql);
     $stmt->bindValue(1, $name, PDO::PARAM_STR);
     $stmt->bindValue(2, $id, PDO::PARAM_INT);
@@ -45,22 +38,23 @@ function updateCous($id, $name)
     $pdo = null;
 }
 
-function getCours($id)
-{
+// voir un
+function getSection($id){
     global $pdo;
-    $sql = "SELECT * FROM cours WHERE id=?";
+    $sql = "SELECT * FROM section WHERE id=?";
     $stmt = $pdo->prepare($sql);
     $stmt->execute([$id]);
     return $stmt->fetch(PDO::FETCH_OBJ);
     $pdo = null;
 }
 
-function getAllCours()
-{
+// voir tout
+function getAllSection(){
     global $pdo;
-    $sql = "SELECT * FROM cours";
+    $sql = "SELECT * FROM section";
     $stmt = $pdo->prepare($sql);
     $stmt->execute();
     return $stmt->fetchAll(PDO::FETCH_OBJ);
     $pdo = null;
 }
+

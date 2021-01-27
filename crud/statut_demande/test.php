@@ -1,5 +1,5 @@
 <?php
-require_once 'coursControlleur.php';
+require_once 'statusControlleur.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,10 +10,10 @@ require_once 'coursControlleur.php';
 </head>
 <body>
 <div class="container">
-    <h1>Gestion des cours</h1>
+    <h1>Gestion des status</h1>
 </div>
-<form action="#" method="post" class="form-check-inline">
-    <input type="hidden" name="CoursAction" value="creat">
+<form action="#" method="get" class="form-check-inline">
+    <input type="hidden" name="RoleAction" value="creat">
     <input type="text" name="nom" class="form-control" placeholder="Nom" >
     <button class="btn btn-success">Ajouter</button>
 </form>
@@ -24,11 +24,11 @@ require_once 'coursControlleur.php';
         <th>Role</th>
     </tr>
     <?php
-    $cours = getAllCours();
-    foreach ($cours as $r) :?>
+    $status = getAllStatus();
+    foreach ($status as $r) :?>
         <tr>
             <td><?= $r->id ?></td>
-            <td><?= $r->cours_name ?></td>
+            <td><?= $r->st_name ?></td>
             <td>
                 <a href="?RoleAction=delete&id=<?= $r->id ?>" class="btn btn-danger">
                     <span class="glyphicon glyphicon-minus-sign">supprimer</span>

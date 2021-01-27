@@ -6,7 +6,30 @@ require_once('../../model/data.php');
 
 $pdo = (new DataAccess)->access();
 
-// créer un role
+// recherche staff
+
+function rechercheStaff($login, $pass){
+    global $pdo;
+    $sql = "SELECT * FROM ietc_test.staff WHERE login = ? and pass = ?";
+    $stmt = $pdo->prepare($sql);
+    $stmt->bindValue(1, $login, PDO::PARAM_STR);
+    $stmt->bindValue(2, $pass, PDO::PARAM_STR);
+    $stmt->execute();
+    $exist = $stmt->rowCount();
+    return $exist;
+}
+
+//function verifExist($login, $pass){
+//
+//    $staff = rechercheStaff($login, $pass);
+//    $staffVerif = $staff->rowCount();
+//    if($staffVerif==1)
+//        return true;
+//    else
+//        return false;
+//}
+
+// créer
 function creatStaff($fisrt_name, $last_name, $email, $phone, $adresse, $ddn, $login, $pass, $role_id){
     global $pdo;
     $sql = "INSERT INTO ietc_test.staff VALUE(NULL, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
@@ -30,7 +53,12 @@ function deleteStaff($id){
     $sql = "DELETE FROM ietc_test.staff WHERE id=?";
     $stmt = $pdo->prepare($sql);
     $stmt->bindValue(1, $id, PDO::PARAM_INT);
-    return $stmt->execute();
+    try{
+        return $stmt->execute();
+    }catch(PDOException $e){
+        $e = "impossible de faire cette action";
+        return $e;
+    }
     $pdo = null;
 }
 

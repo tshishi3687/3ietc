@@ -12,7 +12,7 @@ require_once 'staffControlleur.php';
 <div class="container">
     <h1>Gestion du staff</h1>
 </div>
-<form action="#" method="get" class="form-inline">
+<form action="#" method="post" class="form-inline">
     <input type="hidden" name="StaffAction" value="creat">
     <input type="text" name="nom" class="form-control" placeholder="Nom" >
     <input type="text" name="prenom" class="form-control" placeholder="Prenom" >

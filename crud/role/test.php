@@ -13,7 +13,7 @@
     <div class="container">
         <h1>Gestion des roles</h1>
     </div>
-    <form action="#" method="get" class="form-check-inline">
+    <form action="#" method="post" class="form-check-inline">
         <input type="hidden" name="RoleAction" value="creat">
         <input type="text" name="nom" class="form-control" placeholder="Nom" >
         <button class="btn btn-success">Ajouter</button>

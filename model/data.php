@@ -1,8 +1,6 @@
 <?php
 class DataAccess{
 
-
-
     private function getUser(){
         return $user = "root";
     }
@@ -13,7 +11,7 @@ class DataAccess{
 
     public function access(){
         try {
-            $pdo = new PDO('mysql:host=localhost;dbname=ietc_test', $this->getUser(), $this->getPass());
+            $pdo = new PDO('mysql:host=localhost;dbname=chttt', $this->getUser(), $this->getPass());
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             return $pdo;
 

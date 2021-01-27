@@ -1,66 +1,41 @@
 <?php
-require_once 'crudStaff.php';
+require_once 'CrudDemand.php';
+
+if(isset($_POST['ajouterRequest'])){
+    $staff_id = $_POST['staffID'];
+    $student_id = $_POST['studentID'];
+    $cours_id = $_POST['coursID'];
+    $status_id = $_POST['statusID'];
+    $document_id = $_POST['documentID'];
+
+    creatRequest($staff_id, $student_id, $cours_id, $status_id, $document_id);
+    require_once 'test.php';
+}
+
+$RequestAction = isset($_POST['RequestAction']) ? $_POST['RequestAction'] : '';
+
+switch ($RequestAction){
+    case 'creat':
 
 
-$StaffAction = isset($_POST['StaffAction']) ? $_POST['StaffAction'] : '';
-
-$role = (object)['id'=> -1, 'role_name' => ''];
-
-switch ($StaffAction){
-
-    case 'connect':
-        $login = $_POST['login'];
-        $pass = $_POST['pass'];
-        $staff = rechercheStaff($login,$pass);
-        if($staff == 1)
-            header('Location: http://localhost/3ietc/crud/staff/test.php');
-        else
-            echo 'Mot de passe ou login incorrecte';
 
 
         break;
-
-    case 'creat':
+    case 'update':
+//        $id = $_GET['id'];
 //        if (vefrifNom() && vefrifPrenom() && verifEmail()
 //            && verifPhone() && verifAdresse() && verifDdn()
 //            && vefrifLogin() && vefrifPass() && vefrifRoleId()) {
+            $id = $_POST['id'];
+            $status_id = $_POST['statusID'];
 
-            $fisrt_name = $_POST['nom'];
-            $last_name = $_POST['prenom'];
-            $email = $_POST['email'];
-            $phone = $_POST['phone'];
-            $adresse = $_POST['adresse'];
-            $ddn = $_POST['ddn'];
-            $login = $_POST['login'];
-            $pass = $_POST['pass'];
-            $role_id = $_POST['roleID'];
-
-            creatStaff($fisrt_name,$last_name,$email,$phone,$adresse,$ddn,$login,$pass,$role_id);
+            updateRequest($id,$status_id);
 //        }
-//        else echo "L'ajoue nouveau staff a échoué.";
-        break;
-    case 'update':
-        $id = $_GET['id'];
-        if (vefrifNom() && vefrifPrenom() && verifEmail()
-            && verifPhone() && verifAdresse() && verifDdn()
-            && vefrifLogin() && vefrifPass() && vefrifRoleId()) {
-            $fisrt_name = $_POST['nom'];
-            $last_name = $_POST['prenom'];
-            $email = $_POST['email'];
-            $phone = $_POST['phone'];
-            $adresse = $_POST['adresse'];
-            $ddn = $_POST['ddn'];
-            $login = $_POST['login'];
-            $pass = $_POST['pass'];
-            $role_id = $_POST['roleID'];
-
-            updateStaff($id,$fisrt_name,$last_name,$email,$phone,$adresse,$ddn,$login,$pass,$role_id);
-        }
-        else echo "La modification du staff avec l'id : " . $id ." a échoué.";
+//        else echo "La modification du staff avec l'id : " . $id ." a échoué.";
         break;
     case 'delete':
         $id = $_POST['id'];
-        deleteStaff($id);
+        deleteRequest($id);
         break;
     default: echo "";
 

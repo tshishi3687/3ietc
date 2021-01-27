@@ -1,5 +1,5 @@
 <?php
-require_once 'coursControlleur.php';
+require_once 'sectionController.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,27 +10,27 @@ require_once 'coursControlleur.php';
 </head>
 <body>
 <div class="container">
-    <h1>Gestion des cours</h1>
+    <h1>Gestion de la section</h1>
 </div>
-<form action="#" method="post" class="form-check-inline">
-    <input type="hidden" name="CoursAction" value="creat">
-    <input type="text" name="nom" class="form-control" placeholder="Nom" >
+<form action="#" method="post" class="form-inline">
+    <input type="hidden" name="SectionAction" value="creat">
+    <input type="text" name="nom" class="form-control" placeholder="SectionName" >
     <button class="btn btn-success">Ajouter</button>
 </form>
 <br>
 <table class="table table-striped">
     <tr>
         <th>Id</th>
-        <th>Role</th>
+        <th>section</th>
     </tr>
     <?php
-    $cours = getAllCours();
-    foreach ($cours as $r) :?>
+    $section = getAllSection();
+    foreach ($section as $r) :?>
         <tr>
             <td><?= $r->id ?></td>
-            <td><?= $r->cours_name ?></td>
+            <td><?= $r->section_name ?></td>
             <td>
-                <a href="?RoleAction=delete&id=<?= $r->id ?>" class="btn btn-danger">
+                <a href="?SectionAction=delete&id=<?= $r->id ?>" class="btn btn-danger">
                     <span class="glyphicon glyphicon-minus-sign">supprimer</span>
                 </a>
             </td>

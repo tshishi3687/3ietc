@@ -1,30 +1,33 @@
 <?php
-require_once 'crudCours.php';
+require_once 'crudDoc.php';
 
-$CoursAction = isset($_POST['CoursAction']) ? $_POST['CoursAction'] : '';
+
+$docAction = isset($_POST['docAction']) ? $_POST['docAction'] : '';
 
 $role = (object)['id'=> -1, 'role_name' => ''];
 
-switch ($CoursAction){
+switch ($docAction){
+
+
     case 'edit':
         $id = $_POST['id'];
-        $role = getCours($id);
+        $role = getDoc($id);
 
         break;
 
     case 'creat':
-        $nom = $_POST['nom'];
-        if (is_string($nom)) creatCours($nom);
+        $nom = $_POST['doc'];
+        if (is_string($nom)) creatDoc($nom);
         else echo "L'ajoue nouveau role a échoué.";
         break;
     case 'update':
         $id = $_POST['id'];
         $nom = $_POST['nom'];
-        updateCours($id,$nom);
+        updateDoc($id,$nom);
         break;
     case 'delete':
         $id = $_POST['id'];
-        deleteCours($id);
+        deleteDoc($id);
         break;
     default: echo "";
 

@@ -1,23 +1,22 @@
 <?php
-require_once 'crudStaff.php';
+
+require_once 'crudStudent.php';
 
 
-$StaffAction = isset($_POST['StaffAction']) ? $_POST['StaffAction'] : '';
+$studentAction = isset($_POST['studentAction']) ? $_POST['studentAction'] : '';
 
-$role = (object)['id'=> -1, 'role_name' => ''];
+$role = (object)['id' => -1, 'role_name' => ''];
 
-switch ($StaffAction){
+switch ($studentAction) {
 
     case 'connect':
         $login = $_POST['login'];
         $pass = $_POST['pass'];
-        $staff = rechercheStaff($login,$pass);
-        if($staff == 1)
-            header('Location: http://localhost/3ietc/crud/staff/test.php');
+        $staff = rechercheStudent($login, $pass);
+        if ($staff == 1)
+            header('Location: http://localhost/3ietc/crud/student/test.php');
         else
             echo 'Mot de passe ou login incorrecte';
-
-
         break;
 
     case 'creat':
@@ -25,17 +24,17 @@ switch ($StaffAction){
 //            && verifPhone() && verifAdresse() && verifDdn()
 //            && vefrifLogin() && vefrifPass() && vefrifRoleId()) {
 
-            $fisrt_name = $_POST['nom'];
-            $last_name = $_POST['prenom'];
-            $email = $_POST['email'];
-            $phone = $_POST['phone'];
-            $adresse = $_POST['adresse'];
-            $ddn = $_POST['ddn'];
-            $login = $_POST['login'];
-            $pass = $_POST['pass'];
-            $role_id = $_POST['roleID'];
+        $fisrt_name = $_POST['nom'];
+        $last_name = $_POST['prenom'];
+        $email = $_POST['email'];
+        $phone = $_POST['phone'];
+        $adresse = $_POST['adresse'];
+        $ddn = $_POST['ddn'];
+        $login = $_POST['login'];
+        $pass = $_POST['pass'];
+        $role_id = $_POST['section_id'];
 
-            creatStaff($fisrt_name,$last_name,$email,$phone,$adresse,$ddn,$login,$pass,$role_id);
+        creatStudent($fisrt_name, $last_name, $email, $phone, $adresse, $ddn, $login, $pass, $role_id);
 //        }
 //        else echo "L'ajoue nouveau staff a échoué.";
         break;
@@ -52,21 +51,26 @@ switch ($StaffAction){
             $ddn = $_POST['ddn'];
             $login = $_POST['login'];
             $pass = $_POST['pass'];
-            $role_id = $_POST['roleID'];
+            $role_id = $_GET['roleID'];
 
-            updateStaff($id,$fisrt_name,$last_name,$email,$phone,$adresse,$ddn,$login,$pass,$role_id);
-        }
-        else echo "La modification du staff avec l'id : " . $id ." a échoué.";
+            updateStaff($id, $fisrt_name, $last_name, $email, $phone, $adresse, $ddn, $login, $pass, $role_id);
+        } else echo "La modification du staff avec l'id : " . $id . " a échoué.";
         break;
     case 'delete':
-        $id = $_POST['id'];
-        deleteStaff($id);
+        $id = $_GET['id'];
+        try{
+            deleteStudent($id);
+        }catch(PDOException $e){
+            $e = 'impossible';
+        }
         break;
-    default: echo "";
+    default:
+        echo "";
 
 }
 // je verifie si la variable nom n'est pas vide et si elle a la bonne longueur
-function vefrifNom(){
+function vefrifNom()
+{
     if (!empty($_GET('nom'))) {
         $fisrt_name = $_GET['nom'];
         if (strlen($fisrt_name) > 1) {
@@ -87,60 +91,64 @@ function vefrifNom(){
 }
 
 // je verifie si la variable prenom n'est pas vide et si elle a la bonne longueur
-function vefrifPrenom(){
-    if (!empty($_GET('prenom'))){
+function vefrifPrenom()
+{
+    if (!empty($_GET('prenom'))) {
         $last_name = $_GET['prenom'];
-        if (strlen($last_name)>1){
-            if (strlen($last_name)<=50){
+        if (strlen($last_name) > 1) {
+            if (strlen($last_name) <= 50) {
                 return true;
-            }else{
+            } else {
                 echo 'le prenom est trop grand.';
                 return false;
             }
-        }else {
+        } else {
             echo 'le prenom est trop petit.';
             return false;
         }
-    }else {
+    } else {
         echo 'la variable prenom est vide.';
         return false;
     }
 }
 
 // je verifie si la variable email n'est pas vide et si elle est conform à un type mail
-function verifEmail(){
-    if (!empty($_GET['email'])){
+function verifEmail()
+{
+    if (!empty($_GET['email'])) {
         $email = $_GET['email'];
-        if (filter_var($email, FILTER_VALIDATE_EMAIL)){
+        if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
             return true;
-        }else{
+        } else {
             echo 'email pas valide.';
             return false;
         }
-    }else{
+    } else {
         echo 'le email est vide.';
         return false;
     }
 }
 
 // je verifie si la varialble phone n'est pas vide et ça taille
-function verifPhone(){
-    if (!empty($_GET['email'])){
+function verifPhone()
+{
+    if (!empty($_GET['email'])) {
         $phone = $_GET['phone'];
-        if (strlen($phone)>9 && strlen($phone)<15){
+        if (strlen($phone) > 9 && strlen($phone) < 15) {
             return true;
-        }else{
+        } else {
             echo 'la variable phone entrée n est pas valable.';
             return false;
         }
-    }else{
+    } else {
         echo 'la variable phone est vide.';
         return false;
     }
 }
 
 // je verifie si la variable adresse n'est pas vide et ça longueur
-function verifAdresse(){
+function verifAdresse()
+{
     if (!empty($_GET('adresse'))) {
         $adresse = $_GET['adresse'];
         if (strlen($adresse) > 1) {
@@ -161,23 +169,25 @@ function verifAdresse(){
 }
 
 // je verifie si la variable ddn n'est pas vide et si elle est conform à un type date
-function verifDdn(){
-    if (!empty($_GET['ddn'])){
+function verifDdn()
+{
+    if (!empty($_GET['ddn'])) {
         $ddn = $_GET['ddn'];
-        if (checkdate($ddn)){
+        if (checkdate($ddn)) {
             return true;
-        }else{
+        } else {
             echo 'date pas valide.';
             return false;
         }
-    }else{
+    } else {
         echo 'la date est vide.';
         return false;
     }
 }
 
 // je verifie si la variable login n'est pas vide et si elle a la bonne longueur
-function vefrifLogin(){
+function vefrifLogin()
+{
     if (!empty($_GET('login'))) {
         $login = $_GET['login'];
         if (strlen($login) >= 4) {
@@ -198,7 +208,8 @@ function vefrifLogin(){
 }
 
 // je verifie si la variable pass n'est pas vide et si elle a la bonne longueur
-function vefrifPass(){
+function vefrifPass()
+{
     if (!empty($_GET('pass'))) {
         $pass = $_GET['nom'];
         if (strlen($pass) > 4) {
@@ -219,7 +230,8 @@ function vefrifPass(){
 }
 
 // je verifie si la variable roleId n'est pas vide et si elle existe
-function vefrifRoleId(){
+function vefrifRoleId()
+{
     if (!empty($_GET('roleId'))) {
         $roleId = $_GET['nom'];
         if (is_int($roleId)) {
