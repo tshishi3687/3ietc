@@ -5,6 +5,21 @@
 require_once('../../model/data.php');
 $pdo = (new DataAccess)->access();
 
+
+$stmt = $dbh->prepare("SELECT * FROM personne WHERE email = :email AND password = :password");
+
+$stmt->execute([':email' => $_POST['email'], ':password' => $_POST['password']]);
+
+$user = stmt->fetch();
+
+echo json_encode([
+
+    'status' => 'ok',
+
+    'content' => $user,
+
+]);
+
 function recherchePersonne(): Personne
 {
     $login = "Kenworthy.Ráo@hainaut-promsoc.be";

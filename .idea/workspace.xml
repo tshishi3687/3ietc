@@ -1,244 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cc82e4e-ca6d-49a6-ab01-8728e6fc1fb3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/crud/controlleurCentral.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crud/demande/CrudDemand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crud/demande/Personne.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crud/document/crudDoc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crud/document/docControlleur.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crud/document/test.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crud/section/crudSection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crud/section/sectionController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crud/section/test.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crud/statut_demande/crudStatus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crud/statut_demande/statusControlleur.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crud/statut_demande/test.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crud/student/crudStudent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crud/student/getName.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crud/student/studentController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crud/student/test.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/function.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/795d163d-9a0d-4c47-bc80-6d084bd18867.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/795d163d-9a0d-4c47-bc80-6d084bd18867.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/795d163d-9a0d-4c47-bc80-6d084bd18867/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/795d163d-9a0d-4c47-bc80-6d084bd18867/storage_v2/_src_/schema/mysql.osA4Bg.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+    <list default="true" id="5cc82e4e-ca6d-49a6-ab01-8728e6fc1fb3" name="Default Changelist" comment="27/01/2021">
+      <change afterPath="$PROJECT_DIR$/crud/student/tesssst.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/.idea/3ietc.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/.idea/dataSources/795d163d-9a0d-4c47-bc80-6d084bd18867.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/.idea/dataSources/795d163d-9a0d-4c47-bc80-6d084bd18867/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/.idea/dataSources/795d163d-9a0d-4c47-bc80-6d084bd18867/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/.idea/dataSources/795d163d-9a0d-4c47-bc80-6d084bd18867/storage_v2/_src_/schema/mysql.osA4Bg.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/.idea/dataSources/795d163d-9a0d-4c47-bc80-6d084bd18867/storage_v2/_src_/schema/p_langue.rXvJ0Q.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/.idea/dataSources/795d163d-9a0d-4c47-bc80-6d084bd18867/storage_v2/_src_/schema/p_langue.rXvJ0Q.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/.idea/dataSources/795d163d-9a0d-4c47-bc80-6d084bd18867/storage_v2/_src_/schema/projet_x.xVV5xA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/.idea/dataSources/795d163d-9a0d-4c47-bc80-6d084bd18867/storage_v2/_src_/schema/projet_x.xVV5xA.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/.idea/php.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/.idea/sqldialects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/crud/close.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/crud/cours/coursControlleur.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/crud/cours/crudCours.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/crud/cours/test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/crud/dataAccess.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/crud/request/crudRequest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/crud/request/requestControlleur.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/crud/request/test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/crud/role/crudRole.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/crud/role/data.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/crud/role/roleControlleur.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/crud/role/test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/crud/section/crudSection.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/crud/section/data.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/crud/section/sectionControlleur.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/crud/section/test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/crud/staff/crudStaff.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/crud/staff/staffControlleur.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/crud/staff/test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/crud/student/crudStudent.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/crud/student/studentControlleur.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/crud/student/test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/données et explications/a_faire.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/données et explications/ietc_test.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/model/data.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/dist/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/dist/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/dist/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/dist/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/dist/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/dist/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/dist/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/dist/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/dist/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/dist/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/dist/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/dist/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/dist/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/dist/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/dist/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/dist/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/dist/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/dist/alert.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/dist/alert.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/dist/button.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/dist/button.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/dist/carousel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/dist/carousel.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/dist/collapse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/dist/collapse.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/dist/dropdown.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/dist/dropdown.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/dist/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/dist/modal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/dist/modal.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/dist/popover.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/dist/popover.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/dist/scrollspy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/dist/scrollspy.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/dist/tab.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/dist/tab.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/dist/toast.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/dist/toast.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/dist/tooltip.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/dist/tooltip.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/dist/util.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/dist/util.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/src/alert.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/src/button.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/src/carousel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/src/collapse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/src/dropdown.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/src/modal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/src/popover.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/src/scrollspy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/src/tab.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/src/toast.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/src/tools/sanitizer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/src/tooltip.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/js/src/util.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_alert.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_badge.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_breadcrumb.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_button-group.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_card.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_carousel.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_close.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_code.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_custom-forms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_dropdown.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_forms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_functions.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_grid.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_images.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_input-group.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_jumbotron.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_list-group.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_media.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_mixins.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_modal.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_nav.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_navbar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_pagination.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_popover.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_print.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_progress.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_reboot.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_root.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_spinners.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_tables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_toasts.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_tooltip.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_transitions.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_type.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_utilities.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/bootstrap-grid.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/bootstrap-reboot.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/bootstrap.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/mixins/_alert.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/mixins/_background-variant.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/mixins/_badge.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/mixins/_border-radius.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/mixins/_box-shadow.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/mixins/_breakpoints.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/mixins/_buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/mixins/_caret.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/mixins/_clearfix.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/mixins/_deprecate.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/mixins/_float.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/mixins/_forms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/mixins/_gradients.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/mixins/_grid-framework.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/mixins/_grid.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/mixins/_hover.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/mixins/_image.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/mixins/_list-group.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/mixins/_lists.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/mixins/_nav-divider.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/mixins/_pagination.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/mixins/_reset-text.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/mixins/_resize.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/mixins/_screen-reader.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/mixins/_size.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/mixins/_table-row.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/mixins/_text-emphasis.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/mixins/_text-hide.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/mixins/_text-truncate.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/mixins/_transition.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/mixins/_visibility.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/utilities/_align.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/utilities/_background.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/utilities/_borders.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/utilities/_clearfix.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/utilities/_display.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/utilities/_embed.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/utilities/_flex.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/utilities/_float.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/utilities/_interactions.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/utilities/_overflow.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/utilities/_position.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/utilities/_screenreaders.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/utilities/_shadows.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/utilities/_sizing.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/utilities/_spacing.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/utilities/_stretched-link.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/utilities/_text.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/utilities/_visibility.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/node_modules/bootstrap/scss/vendor/_rfs.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3ietc/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud/cours/coursControlleur.php" beforeDir="false" afterPath="$PROJECT_DIR$/crud/cours/coursControlleur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud/cours/crudCours.php" beforeDir="false" afterPath="$PROJECT_DIR$/crud/cours/crudCours.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud/cours/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/crud/cours/test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud/entity/.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud/entity/role.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud/entity/test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud/request/crudRequest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud/request/requestControlleur.php" beforeDir="false" afterPath="$PROJECT_DIR$/crud/demande/demandeControlleur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud/request/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/crud/demande/test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud/role/data.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud/role/roleControlleur.php" beforeDir="false" afterPath="$PROJECT_DIR$/crud/role/roleControlleur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud/role/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/crud/role/test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud/section/Section.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud/staff/crudStaff.php" beforeDir="false" afterPath="$PROJECT_DIR$/crud/staff/crudStaff.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud/staff/staffControlleur.php" beforeDir="false" afterPath="$PROJECT_DIR$/crud/staff/staffControlleur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud/staff/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/crud/staff/test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/data.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/data.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/student/crudStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/crud/student/crudStudent.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -364,8 +130,16 @@
       <workItem from="1610879276752" duration="132000" />
       <workItem from="1610957203276" duration="21000" />
       <workItem from="1610991052649" duration="6003000" />
-      <workItem from="1611767222751" duration="6018000" />
+      <workItem from="1611767222751" duration="8219000" />
     </task>
+    <task id="LOCAL-00001" summary="27/01/2021">
+      <created>1611773420404</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611773420404</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -383,6 +157,10 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="27/01/2021" />
+    <option name="LAST_COMMIT_MESSAGE" value="27/01/2021" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -390,6 +168,11 @@
           <url>file://$PROJECT_DIR$/crud/student/test.php</url>
           <line>44</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/crud/student/crudStudent.php</url>
+          <line>4</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
