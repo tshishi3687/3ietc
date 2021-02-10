@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cc82e4e-ca6d-49a6-ab01-8728e6fc1fb3" name="Default Changelist" comment="27/01/2021">
-      <change afterPath="$PROJECT_DIR$/crud/student/tesssst.php" afterDir="false" />
+    <list default="true" id="5cc82e4e-ca6d-49a6-ab01-8728e6fc1fb3" name="Default Changelist" comment="27/01/2021 nico">
+      <change afterPath="$PROJECT_DIR$/test/config/Data.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/model/Cours.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/model/Demande.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/model/Documents.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/model/InfoPersonne.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/model/Justifier.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/model/Personne.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/model/Section.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/model/Statut.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/model/Statut_demande.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/personne/lire.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud/student/crudStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/crud/student/crudStudent.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +57,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Projet_langue" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../php/php.exe" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -69,19 +79,6 @@
       <recent name="C:\xampp\htdocs\3ietc\crud" />
       <recent name="C:\Users\tshis\IdeaProjects\3ietc\controleur\role" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -130,7 +127,13 @@
       <workItem from="1610879276752" duration="132000" />
       <workItem from="1610957203276" duration="21000" />
       <workItem from="1610991052649" duration="6003000" />
-      <workItem from="1611767222751" duration="8219000" />
+      <workItem from="1611767222751" duration="8852000" />
+      <workItem from="1611821114775" duration="192000" />
+      <workItem from="1612781156516" duration="87000" />
+      <workItem from="1612786788309" duration="22054000" />
+      <workItem from="1612812010186" duration="641000" />
+      <workItem from="1612885349027" duration="20180000" />
+      <workItem from="1612975799483" duration="3341000" />
     </task>
     <task id="LOCAL-00001" summary="27/01/2021">
       <created>1611773420404</created>
@@ -139,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611773420404</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="27/01/2021 nico">
+      <created>1611775541424</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1611775541424</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,7 +169,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="27/01/2021" />
-    <option name="LAST_COMMIT_MESSAGE" value="27/01/2021" />
+    <MESSAGE value="27/01/2021 nico" />
+    <option name="LAST_COMMIT_MESSAGE" value="27/01/2021 nico" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
