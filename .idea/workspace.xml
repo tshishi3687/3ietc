@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cc82e4e-ca6d-49a6-ab01-8728e6fc1fb3" name="Default Changelist" comment="27/01/2021 nico">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="5cc82e4e-ca6d-49a6-ab01-8728e6fc1fb3" name="Default Changelist" comment="10/02/2021 connexion ok">
       <change beforePath="$PROJECT_DIR$/test/personne/lire.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/personne/lire.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +121,7 @@
       <workItem from="1612786788309" duration="22054000" />
       <workItem from="1612812010186" duration="641000" />
       <workItem from="1612885349027" duration="20180000" />
-      <workItem from="1612975799483" duration="5231000" />
+      <workItem from="1612975799483" duration="5554000" />
     </task>
     <task id="LOCAL-00001" summary="27/01/2021">
       <created>1611773420404</created>
@@ -145,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612979391359</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="10/02/2021 connexion ok">
+      <created>1612981210375</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1612981210375</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,7 +172,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="27/01/2021" />
     <MESSAGE value="27/01/2021 nico" />
-    <option name="LAST_COMMIT_MESSAGE" value="27/01/2021 nico" />
+    <MESSAGE value="10/02/2021 connexion ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="10/02/2021 connexion ok" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
